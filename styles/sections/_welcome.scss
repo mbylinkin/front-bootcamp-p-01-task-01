@@ -1,0 +1,37 @@
+.welcome-section {
+    position: relative;
+    text-align: center;    
+}
+
+.welcome-section__title {
+    margin-bottom: 28px;
+
+    font-size: 80px;
+    line-height: 88px;
+    font-weight: 400;
+}
+
+.welcome-section__subtitle {
+    margin-bottom: 86px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.welcom-section__links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+
+.welcome-section__link:first-child {
+    margin-right: 36px;
+}
+
+.welcome-section__gradient {
+    height: 550px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #0E0E0E 66.15%);
+}

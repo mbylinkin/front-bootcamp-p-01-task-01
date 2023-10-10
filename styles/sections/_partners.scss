@@ -1,0 +1,28 @@
+.partners-section {
+    padding-top: 200px;
+
+    text-align: center;
+
+    &__title {
+        text-align: center;        
+    }
+
+    &__subtitle {
+        margin-bottom: 54px;
+        text-align: center;
+    }
+
+    &__brands {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+
+    &__logos {
+        margin-right: 74px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
