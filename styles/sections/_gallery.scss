@@ -2,4 +2,33 @@
     padding-top: 200px;
 
     text-align: center;
+
+    &__images {
+        margin-top: 44px;
+    }
+
+    .gallery-image {
+        border-radius: 12px;
+        margin-right: 33px;
+
+        height: 285px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__image-small {
+        width: 225px;
+    }
+
+    &__image-medium {
+        width: 395px;
+    }        
+
+
+    &__button {
+        margin-top: 44px;
+    }
+
 }

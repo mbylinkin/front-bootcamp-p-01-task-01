@@ -215,6 +215,26 @@ button {
   padding-top: 200px;
   text-align: center;
 }
+.gallery-section__images {
+  margin-top: 44px;
+}
+.gallery-section .gallery-image {
+  border-radius: 12px;
+  margin-right: 33px;
+  height: 285px;
+}
+.gallery-section .gallery-image:last-child {
+  margin-right: 0;
+}
+.gallery-section__image-small {
+  width: 225px;
+}
+.gallery-section__image-medium {
+  width: 395px;
+}
+.gallery-section__button {
+  margin-top: 44px;
+}
 
 .partners-section {
   padding-top: 200px;
