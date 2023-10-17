@@ -67,8 +67,7 @@
         align-items: center;
 
         @include lg-max {
-            width: 348px;
-            height: 100%;
+            width: 100%;
         }
 
         border: 1px solid #D3D3D3;
@@ -104,8 +103,36 @@
         border-color: #4452fe;
     }
 
-    &__image {
+    &__image-left {
+        width: 312px;
+        height: 196px;
+
         margin-bottom: 40px;
-    }    
+
+        @include lg-max {
+            height: auto;
+            width: 100%;
+
+            padding-left: 60px;
+            padding-right: 60px;
+    
+        }
+    }
+
+    &__image-right {
+        width: 380px;
+        height: 376px;
+
+        margin-bottom: 40px;
+
+        @include lg-max {
+            height: auto;
+            width: 100%;
+
+            padding: 36px;
+            padding-right: 36px;
+        }
+    }
+
 }
 

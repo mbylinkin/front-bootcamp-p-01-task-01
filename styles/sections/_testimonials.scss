@@ -19,8 +19,18 @@
         }
     }
 
-    &__block {
+    &__card-block {
         margin-right: 20px;
+
+        @include lg-max {
+            margin-right: 0;
+            margin-bottom: 23px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
     }
 
     &__card {
@@ -37,8 +47,10 @@
         background: #181818;
 
         @include lg-max {
-            width: 352px;
-            height: 100%;
+            width: 100%;
+            max-width: 352px;
+
+            margin-bottom: 22px;
         }
     
         &--main-info {

@@ -57,10 +57,12 @@
     }
 
     &__content-media {
+        width: 585px;
 
         @include lg-max {
-            width: 540px;
-            height: 474px;
+            width: 100%;
+            max-width: 541px;
+            padding: 68px;
         }
 
     }

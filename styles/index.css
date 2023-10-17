@@ -396,8 +396,7 @@ button {
 }
 @media screen and (max-width: 991px) {
   .contents-section__card {
-    width: 348px;
-    height: 100%;
+    width: 100%;
   }
 }
 .contents-section__card:last-child {
@@ -420,8 +419,31 @@ button {
   background-color: #4452fe;
   border-color: #4452fe;
 }
-.contents-section__image {
+.contents-section__image-left {
+  width: 312px;
+  height: 196px;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 991px) {
+  .contents-section__image-left {
+    height: auto;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+.contents-section__image-right {
+  width: 380px;
+  height: 376px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 991px) {
+  .contents-section__image-right {
+    height: auto;
+    width: 100%;
+    padding: 36px;
+    padding-right: 36px;
+  }
 }
 
 .gallery-section {
@@ -461,12 +483,19 @@ button {
 .gallery-section__image-small {
   width: 225px;
 }
+@media screen and (max-width: 991px) {
+  .gallery-section__image-small {
+    max-width: 225px;
+    width: 100%;
+  }
+}
 .gallery-section__image-medium {
   width: 395px;
 }
 @media screen and (max-width: 991px) {
   .gallery-section__image-medium {
-    width: 225px;
+    max-width: 225px;
+    width: 100%;
   }
 }
 .gallery-section__button {
@@ -516,8 +545,17 @@ button {
     align-items: center;
   }
 }
-.testimonials-section__block {
+.testimonials-section__card-block {
   margin-right: 20px;
+}
+@media screen and (max-width: 991px) {
+  .testimonials-section__card-block {
+    margin-right: 0;
+    margin-bottom: 23px;
+  }
+}
+.testimonials-section__card-block:last-child {
+  margin-bottom: 0;
 }
 .testimonials-section__card {
   padding: 40px;
@@ -531,8 +569,9 @@ button {
 }
 @media screen and (max-width: 991px) {
   .testimonials-section__card {
-    width: 352px;
-    height: 100%;
+    width: 100%;
+    max-width: 352px;
+    margin-bottom: 22px;
   }
 }
 .testimonials-section__card--main-info {
@@ -604,10 +643,14 @@ button {
     align-items: center;
   }
 }
+.adv-section__content-media {
+  width: 585px;
+}
 @media screen and (max-width: 991px) {
   .adv-section__content-media {
-    width: 540px;
-    height: 474px;
+    width: 100%;
+    max-width: 541px;
+    padding: 68px;
   }
 }
 
@@ -624,6 +667,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 114px;
   }
 }
 .footer-section__title {
