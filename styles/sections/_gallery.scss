@@ -5,6 +5,13 @@
 
     &__images {
         margin-top: 44px;
+
+        @include lg-max {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     .gallery-image {
@@ -13,8 +20,18 @@
 
         height: 285px;
 
+        @include lg-max {
+            margin-right: 0;
+            margin-bottom: 33px;
+        }
+
         &:last-child {
             margin-right: 0;
+
+            @include lg-max {
+                margin-bottom: 0;
+            }
+    
         }
     }
 
@@ -24,6 +41,10 @@
 
     &__image-medium {
         width: 395px;
+
+        @include lg-max {
+            width: 225px;
+        }
     }        
 
 

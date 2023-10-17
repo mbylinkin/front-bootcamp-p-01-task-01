@@ -9,9 +9,7 @@
   <body>
     <header class="header">
       <div class="header__inner">
-        <div class="logo">
-          <img src="./images/logo.svg" alt="Logo" />
-        </div>
+        <img class="logo" src="./images/logo.svg" alt="Logo" />
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
@@ -28,7 +26,18 @@
             </li>
           </ul>
         </nav>
-        <button class="header_button button button--small">Login</button>
+        <div class="flex">
+          <button class="header__login-button button button--small">
+            Login
+          </button>
+          <button class="header__mobile-button">
+            <img
+              class="header__mobile-icon"
+              src="./images/mobile/menu-icon.svg"
+              alt="Mobile menu icon"
+            />
+          </button>
+        </div>
       </div>
     </header>
     <main>
@@ -41,12 +50,12 @@
           Most calendars are designed for teams. Slate is designed for <br />
           freelancers who want a simple way to plan their schedule.
         </p>
-        <div class="welcom-section__links">
+        <div class="welcome-section__links">
           <a href="#" class="welcome-section__link button button--large"
-            >Try for free</a
+            >Try For Free</a
           >
           <a href="#" class="welcome-section__link button button--large"
-            >Learn</a
+            >Learn More</a
           >
         </div>
         <img
@@ -136,14 +145,16 @@
           It's only a keystroke away.
         </h2>
         <div class="flex justify-center">
-          <div class="contents-section__content">
+          <div class="contents-section__cards">
             <div class="contents-section__card">
-              <h3 class="contents-section__caption">Work</h3>
-              <p class="contents-section__paragraph">
-                Ever wondered if you're too reliant<br />
-                on a client for work? Slate helps<br />
-                you identify.
-              </p>
+              <div class="contents-section__card-header">
+                <h3 class="contents-section__caption">Work</h3>
+                <p class="contents-section__paragraph">
+                  Ever wondered if you're too reliant<br />
+                  on a client for work? Slate helps<br />
+                  you identify.
+                </p>
+              </div>
               <button class="contents-section__button button button--large">
                 Sign up
               </button>
@@ -156,12 +167,14 @@
               />
             </div>
             <div class="contents-section__card">
-              <h3 class="contents-section__caption">Design with real data</h3>
-              <p class="contents-section__paragraph">
-                Ever wondered if you're too reliant<br />
-                on a client for work? Slate helps<br />
-                you identify.
-              </p>
+              <div class="contents-section__card-header">
+                <h3 class="contents-section__caption">Design with real data</h3>
+                <p class="contents-section__paragraph">
+                  Ever wondered if you're too reliant<br />
+                  on a client for work? Slate helps<br />
+                  you identify.
+                </p>
+              </div>
               <button class="contents-section__button button button--large">
                 Try for free
               </button>
@@ -384,7 +397,7 @@
       <section class="adv-section">
         <div class="adv-section__content">
           <div class="adv-section__content-left">
-            <h2 class="adv-section__title">
+            <h2 class="adv-section__title section__title">
               OpenType features <br />
               and Variable fonts
             </h2>
@@ -392,9 +405,11 @@
               Try for free
             </button>
           </div>
-          <div class="adv-section__content-media">
-            <img src="./images/adv/Line Chart 1.png" alt="" />
-          </div>
+          <img
+            class="adv-section__content-media"
+            src="./images/adv/Line Chart 1.png"
+            alt=""
+          />
         </div>
       </section>
     </main>

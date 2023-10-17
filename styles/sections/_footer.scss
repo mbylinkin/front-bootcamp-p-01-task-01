@@ -5,6 +5,13 @@
     &__content {
         display: flex;
         justify-content: center;
+
+        @include lg-max {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
     }
 
     &__title {

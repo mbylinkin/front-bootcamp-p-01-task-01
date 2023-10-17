@@ -1,6 +1,8 @@
+@import "./mixins.scss";
+@import "./variables.scss";
 @import "./root-styles.scss";
 @import "./ui/buttons.scss";
-@import "./header.scss";
+@import "./sections/header.scss";
 @import "./sections/base.scss";
 @import "./sections/welcome.scss";
 @import "./sections/features.scss";
