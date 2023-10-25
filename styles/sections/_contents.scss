@@ -5,8 +5,6 @@
 
     @include lg-max {
         padding-top: 162px;
-        // padding-left: 80px;
-        // padding-right: 80px;
     }
 
     &__title {
@@ -66,14 +64,14 @@
         justify-content: space-between;
         align-items: center;
 
-        @include lg-max {
-            width: 100%;
-        }
-
         border: 1px solid #D3D3D3;
 
         color: #000;
         background-color: white;
+
+        @include lg-max {
+            width: 100%;
+        }
 
         &:last-child {
             margin-left: 32px;
@@ -93,8 +91,6 @@
     }
 
     &__button {
-        // margin-top: 30px;
-        // margin-bottom: 30px;
 
         border: 1px solid #fff;
         color: #fff;
