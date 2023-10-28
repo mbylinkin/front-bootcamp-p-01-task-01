@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootcamp react. Home task 01</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <img class="logo" src="./images/logo.svg" alt="Logo" />
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Product</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">About</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex">
+          <button class="header__login-button button button--small">
+            Login
+          </button>
+          <button class="header__mobile-button">
+            <img
+              class="header__mobile-icon visible"
+              src="./images/mobile/menu-icon.svg"
+              alt="Mobile menu icon"
+            />
+            <img
+              class="header__close-icon"
+              src="./images/mobile/menu-close-icon.svg"
+              alt="Mobile menu close icon"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="header__mobile-menu mobile-menu">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Home</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Product</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">About</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Contact</a>
+          </li>
+        </ul>
+        <button class="mobile-menu__login-button button button--small">
+          Login
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="welcome-section">
+        <h1 class="welcome-section__title">
+          Work at the speed<br />
+          of thought
+        </h1>
+        <p class="welcome-section__subtitle">
+          Most calendars are designed for teams. Slate is designed for <br />
+          freelancers who want a simple way to plan their schedule.
+        </p>
+        <div class="welcome-section__links">
+          <a href="#" class="welcome-section__link button button--large"
+            >Try For Free</a
+          >
+          <a href="#" class="welcome-section__link button button--large"
+            >Learn More</a
+          >
+        </div>
+        <img
+          src="./images/screens.png"
+          alt="Графики"
+          class="welcome-section__img"
+        />
+        <div class="welcome-section__gradient"></div>
+      </section>
+      <section class="features-section">
+        <h2 class="features-section__title section__title">features</h2>
+        <p class="features-section__subtitle section__subtitle">
+          Most calendars are designed for teams. Slate is designed for <br />
+          freelancers who want a simple way to plan their schedule.
+        </p>
+        <div class="flex justify-center">
+          <div class="features-section__content">
+            <div class="features-section__images">
+              <img
+                src="./images/features/features-chat-bot.png"
+                alt="Панель инструментов"
+                class="features-section__panel-image"
+              />
+              <img
+                src="./images/features/features-line-chart-1.png"
+                alt="График"
+                class="features-section__chart-image"
+              />
+            </div>
+            <ul class="features-section__list">
+              <li class="features-section__list-item">
+                <h3 class="features-section__list-title">
+                  <div class="flex align-center">
+                    <img
+                      src="./images/features/features-source-of-truth.svg"
+                      alt=""
+                    />
+                    <span
+                      >A single source <br />
+                      of truth</span
+                    >
+                  </div>
+                </h3>
+                <p class="features-section__list-text">
+                  When you add work to your Slate calendar we automatically
+                  calculate useful insights
+                </p>
+              </li>
+              <li class="features-section__list-item">
+                <h3 class="features-section__list-title">
+                  <div class="flex align-centr">
+                    <img
+                      src="./images/features/features-intuitive-interface.svg"
+                      alt=""
+                    />
+                    <span>Intuitive <br />interface</span>
+                  </div>
+                </h3>
+                <p class="features-section__list-text">
+                  When you add work to your Slate calendar we automatically
+                  calculate useful insights
+                </p>
+              </li>
+              <li class="features-section__list-item">
+                <h3 class="features-section__list-title">
+                  <div class="flex align-center">
+                    <img
+                      src="./images/features/features-with-rules.svg"
+                      alt=""
+                    />
+                    <span>Or with rules</span>
+                  </div>
+                </h3>
+                <p class="features-section__list-text">
+                  When you add work to your Slate calendar we automatically
+                  calculate useful insights
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="contents-section">
+        <h1 class="contents-section__title section__title">Contents</h1>
+        <h2 class="contents-section__subtitle section__subtitle">
+          We focus on ergonomics and meeting you where you work. <br />
+          It's only a keystroke away.
+        </h2>
+        <div class="flex justify-center">
+          <div class="contents-section__cards">
+            <div class="contents-section__card">
+              <div class="contents-section__card-header">
+                <h3 class="contents-section__caption">Work</h3>
+                <p class="contents-section__paragraph">
+                  Ever wondered if you're too reliant<br />
+                  on a client for work? Slate helps<br />
+                  you identify.
+                </p>
+              </div>
+              <button class="contents-section__button button button--large">
+                Sign up
+              </button>
+              <img
+                class="contents-section__image-left"
+                src="./images/contents/SCREEN MASK.png"
+                alt="Screen"
+              />
+            </div>
+            <div class="contents-section__card">
+              <div class="contents-section__card-header">
+                <h3 class="contents-section__caption">Design with real data</h3>
+                <p class="contents-section__paragraph">
+                  Ever wondered if you're too reliant<br />
+                  on a client for work? Slate helps<br />
+                  you identify.
+                </p>
+              </div>
+              <button class="contents-section__button button button--large">
+                Try for free
+              </button>
+              <img
+                class="contents-section__image-right"
+                src="./images/contents/Boards Notifications.png"
+                alt="Screen"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery-section">
+        <div class="gallery-section__content">
+          <h1 class="gallery-section__title section__title">Gallery</h1>
+          <h2 class="gallery-section__subtitle section__subtitle">
+            We focus on ergonomics and meeting you where you work.<br />
+            It's only a keystroke away.
+          </h2>
+          <div class="gallery-section__images">
+            <img
+              src="./images/gallery/Rectangle_1_1.png"
+              alt="Rectangle"
+              class="gallery-section__image-small gallery-image"
+            />
+            <img
+              src="./images/gallery/Rectangle_1_2.png"
+              alt="Rectangle"
+              class="gallery-section__image-small gallery-image"
+            />
+            <img
+              src="./images/gallery/Rectangle_1_3.png"
+              alt="Rectangle"
+              class="gallery-section__image-small gallery-image"
+            />
+            <img
+              src="./images/gallery/Rectangle_1_4.png"
+              alt="Rectangle"
+              class="gallery-section__image-small gallery-image"
+            />
+          </div>
+          <div class="gallery-section__images">
+            <img
+              src="./images/gallery/Rectangle_2_1.png"
+              alt="Rectangle"
+              class="gallery-section__image-medium gallery-image"
+            />
+            <img
+              src="./images/gallery/Rectangle_2_2.png"
+              alt="Rectangle"
+              class="gallery-section__image-small gallery-image"
+            />
+            <img
+              src="./images/gallery/Rectangle_2_3.png"
+              alt="Rectangle"
+              class="gallery-section__image-medium gallery-image"
+            />
+          </div>
+          <button class="gallery-section__button button button--large">
+            See more
+          </button>
+        </div>
+      </section>
+      <section class="partners-section">
+        <div class="partners-section__content">
+          <h1 class="partners-section__title section__title">Partners</h1>
+          <h2 class="partners-section__subtitle section__subtitle">
+            We focus on ergonomics and meeting you where you work.<br />
+            It's only a keystroke away.
+          </h2>
+          <div class="partners-section__brands">
+            <img
+              src="./images/brands/logos_apple-app-store.svg"
+              alt="apple"
+              class="partners-section__logos"
+            />
+            <img
+              src="./images/brands/logos_apiary.svg"
+              alt="apiary"
+              class="partners-section__logos"
+            />
+            <img
+              src="./images/brands/logos_android-icon.svg"
+              alt="android"
+              class="partners-section__logos"
+            />
+            <img
+              src="./images/brands/logos_basecamp.svg"
+              alt="basecamp"
+              class="partners-section__logos"
+            />
+            <img
+              src="./images/brands/logos_airbnb.svg"
+              alt="airbnb"
+              class="partners-section__logos"
+            />
+            <img
+              src="./images/brands/logos_ibm.svg"
+              alt="ibm"
+              class="partners-section__logos"
+            />
+          </div>
+          <button class="partners-section__button button button--large">
+            All partners
+          </button>
+        </div>
+      </section>
+      <section class="testimonials-section">
+        <div class="testimonials-section__content">
+          <h1 class="testimonials-section__title section__title">
+            Testimonials
+          </h1>
+          <div class="testimonials-section__container">
+            <div class="testimonials-section__card-block">
+              <div class="testimonials-section__card">
+                <div class="testimonials-section__card-main-info">
+                  <img
+                    src="./images/testimonials/Ellipse 2.png"
+                    alt=""
+                    class="testimonials-section__card-avatar"
+                  />
+                  <div class="testimonials-section__card-info">
+                    <a href="" class="testimoials-section__card-name"
+                      >Claire Bell</a
+                    >
+                    <p class="testimoials-section__card-position">Designer</p>
+                  </div>
+                </div>
+
+                <p class="testimonials-section__card-text">
+                  Slate helps you see how many more days <br />
+                  you need to work to reach your financial<br />
+                  goal for the month and year. Slate helps<br />
+                  you see how many more days<br />
+                  you need to work to reach your financial<br />
+                  goal for the month and year.your financial<br />
+                  goal for the month and year.<br />
+                </p>
+              </div>
+              <div class="testimonials-section__card">
+                <div class="testimonials-section__card-main-info">
+                  <img
+                    src="./images/testimonials/Ellipse 2.png"
+                    alt=""
+                    class="testimonials-section__card-avatar"
+                  />
+                  <div class="testimonials-section__card-info">
+                    <a href="" class="testimoials-section__card-name"
+                      >Ralph Fisher</a
+                    >
+                    <p class="testimoials-section__card-position">Designer</p>
+                  </div>
+                </div>
+
+                <p class="testimonials-section__card-text">
+                  Slate helps you see how many more days <br />
+                  you need to work to reach your financial<br />
+                  goal for the month and year. Slate helps<br />
+                  you see how many more days<br />
+                  you need to work to reach your financial<br />
+                  goal for the month and year.<br />
+                </p>
+              </div>
+            </div>
+            <div class="testimonials-section__card-block">
+              <div class="testimonials-section__card">
+                <div class="testimonials-section__card-main-info">
+                  <img
+                    src="./images/testimonials/Ellipse 2.png"
+                    alt=""
+                    class="testimonials-section__card-avatar"
+                  />
+                  <div class="testimonials-section__card-info">
+                    <a href="" class="testimoials-section__card-name"
+                      >Francisco Lane</a
+                    >
+                    <p class="testimoials-section__card-position">Designer</p>
+                  </div>
+                </div>
+
+                <p class="testimonials-section__card-text">
+                  Slate helps you see how many more days <br />
+                  you need to work to reach your financial<br />
+                  goal for the month and year. Slate helps<br />
+                  you see how many more days<br />
+                  you need to work to reach your financial<br />
+                  goal for the month and year.<br />
+                </p>
+              </div>
+              <div class="testimonials-section__card">
+                <div class="testimonials-section__card-main-info">
+                  <img
+                    src="./images/testimonials/Ellipse 2.png"
+                    alt=""
+                    class="testimonials-section__card-avatar"
+                  />
+                  <div class="testimonials-section__card-info">
+                    <a href="" class="testimoials-section__card-name"
+                      >Jorge Murphy</a
+                    >
+                    <p class="testimoials-section__card-position">Designer</p>
+                  </div>
+                </div>
+
+                <p class="testimonials-section__card-text">
+                  Slate helps you see how many more days <br />
+                  you need to work to reach your financial<br />
+                  goal for the month and year. Slate helps<br />
+                  you see how many more days<br />
+                  you need to work to reach your financial<br />
+                  goal for the month and year.<br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="adv-section">
+        <div class="adv-section__content">
+          <div class="adv-section__content-left">
+            <h2 class="adv-section__title section__title">
+              OpenType features <br />
+              and Variable fonts
+            </h2>
+            <button class="adv-section__button button button--large">
+              Try for free
+            </button>
+          </div>
+          <img
+            class="adv-section__content-media"
+            src="./images/adv/Line Chart 1.png"
+            alt=""
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-section">
+        <div class="footer-section__content">
+          <div class="footer-section__list-fingertipe">
+            <h3 class="footer-section__title">Fingertipe</h3>
+            <ul class="footer-section__list">
+              <li class="footer-section__list-item"><a href="#">Home</a></li>
+              <li class="footer-section__list-item">
+                <a href="#">Examples</a>
+              </li>
+              <li class="footer-section__list-item"><a href="#">Pricing</a></li>
+              <li class="footer-section__list-item"><a href="#">Updates</a></li>
+            </ul>
+          </div>
+          <div class="footer-section__list-resources">
+            <h3 class="footer-section__title">Resources</h3>
+            <ul class="footer-section__list">
+              <li class="footer-section__list-item"><a href="#">Home</a></li>
+              <li class="footer-section__list-item">
+                <a href="#">Examples</a>
+              </li>
+              <li class="footer-section__list-item"><a href="#">Pricing</a></li>
+              <li class="footer-section__list-item"><a href="#">Updates</a></li>
+            </ul>
+          </div>
+          <div class="footer-section__list-about">
+            <h3 class="footer-section__title">About</h3>
+            <ul class="footer-section__list">
+              <li class="footer-section__list-item"><a href="#">Home</a></li>
+              <li class="footer-section__list-item">
+                <a href="#">Examples</a>
+              </li>
+              <li class="footer-section__list-item"><a href="#">Pricing</a></li>
+              <li class="footer-section__list-item"><a href="#">Updates</a></li>
+            </ul>
+          </div>
+          <ul class="footer-section__list-contacts">
+            <li class="footer-section__list-contacts-item">
+              <img src="./images/footer/bx_bx-map.svg" alt="" />
+              <p>7480 Mockingbird Hill undefined</p>
+            </li>
+            <li class="footer-section__list-contacts-item">
+              <img src="./images/footer/ic_baseline-phone-android.svg" alt="" />
+              <p>(239) 555-0108</p>
+            </li>
+            <li class="footer-section__list-contacts-item footer-icons">
+              <img
+                src="./images/footer/ant-design_twitter-outlined.svg"
+                alt=""
+                class="footer-section__list-contacts-img"
+              /><img
+                src="./images/footer/ant-design_facebook-filled.svg"
+                alt=""
+                class="footer-section__list-contacts-img"
+              /><img
+                src="./images/footer/ant-design_linkedin-filled.svg"
+                alt=""
+                class="footer-section__list-contacts-img"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

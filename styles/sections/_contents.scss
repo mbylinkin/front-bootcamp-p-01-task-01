@@ -1,0 +1,134 @@
+.contents-section {
+    padding-top: 210px;
+    
+    text-align: center;
+
+    @include lg-max {
+        padding-top: 162px;
+    }
+
+    &__title {
+
+        @include xl-max {
+            margin-left: 46px;
+            margin-right: 46px;
+    
+            br {
+                display: none;
+            }
+        }
+
+    }
+
+    &__subtitle {
+        margin-bottom: 80px;
+        text-align: center;
+
+        @include xl-max {
+            margin-left: 46px;
+            margin-right: 46px;
+    
+            br {
+                display: none;
+            }
+        }
+
+    }
+
+    &__cards {
+        display: flex;        
+
+        @include lg-max {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+
+    &__caption {
+        margin-top: 50px;
+    }
+
+    &__paragraph {
+        margin-top: 20px;
+    }
+
+
+    &__card {
+        border-radius: 10px;
+        width: 476px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        border: 1px solid #D3D3D3;
+
+        color: #000;
+        background-color: white;
+
+        @include lg-max {
+            width: 100%;
+        }
+
+        &:last-child {
+            margin-left: 32px;
+
+            @include lg-max {
+                margin-left: 0;
+                margin-top: 33px;
+            }
+    
+        }
+
+    }
+
+    &__paragraph {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    &__button {
+
+        border: 1px solid #fff;
+        color: #fff;
+        background-color: transparent;
+        background-color: #4452fe;
+        border-color: #4452fe;
+    }
+
+    &__image-left {
+        width: 312px;
+        height: 196px;
+
+        margin-bottom: 40px;
+
+        @include lg-max {
+            height: auto;
+            width: 100%;
+
+            padding-left: 60px;
+            padding-right: 60px;
+    
+        }
+    }
+
+    &__image-right {
+        width: 380px;
+        height: 376px;
+
+        margin-bottom: 40px;
+
+        @include lg-max {
+            height: auto;
+            width: 100%;
+
+            padding: 36px;
+            padding-right: 36px;
+        }
+    }
+
+}
+
