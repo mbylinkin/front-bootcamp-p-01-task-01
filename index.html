@@ -32,12 +32,36 @@
           </button>
           <button class="header__mobile-button">
             <img
-              class="header__mobile-icon"
+              class="header__mobile-icon visible"
               src="./images/mobile/menu-icon.svg"
               alt="Mobile menu icon"
             />
+            <img
+              class="header__close-icon"
+              src="./images/mobile/menu-close-icon.svg"
+              alt="Mobile menu close icon"
+            />
           </button>
         </div>
+      </div>
+      <div class="header__mobile-menu mobile-menu">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Home</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Product</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">About</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Contact</a>
+          </li>
+        </ul>
+        <button class="mobile-menu__login-button button button--small">
+          Login
+        </button>
       </div>
     </header>
     <main>
@@ -473,5 +497,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -23,6 +23,10 @@ body {
     font-family: 'Work Sans', sans-serif;
     background-color: var(--bg-color);
     color: var(--color);
+
+    &.hidden {
+        overflow-y: hidden;
+    }
 }
 
 ul {
